@@ -3,12 +3,30 @@
  */
 package pl.saltsoft;
 
+import org.checkerframework.checker.units.qual.A;
+
 public class App {
     public String getGreeting() {
         return "Hello world.";
     }
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+    public static void main(String[] args) throws Exception {
+//        System.out.println(new App().getGreeting());
+//        Angela kkk=new Angela();
+//
+//        kkk.readLinesFromFile("U:\\dev\\angela93\\src\\main\\java\\pl\\saltsoft\\App.java");
+//        String s;
+//        s = "readmemd";
+//        kkk.writeFile(s);
+
+        Ada a = new Ada();
+        a.psy(new Dog("kola", 1.5, 6));
+
+        Dog staryBuryPies = a.unpsy("{\"name\":\"reksio\",\"animal\":1.5,\"eat\":6}");
+        System.out.println(staryBuryPies.name);
+
+
+
+
     }
 }
